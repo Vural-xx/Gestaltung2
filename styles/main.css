@@ -86,7 +86,7 @@ nav {
     margin: 0px auto;
 }
 
-.article{
+.article, .rezept, .naehrwerte{
     margin: 0px auto 30px auto;
     width:843px;
     border-top: 2px solid white;
@@ -100,6 +100,16 @@ nav {
     display:inline-block;
     width:80px;
     font-size: 11px;
+}
+.rezept h2{
+    font-family: LoveYa;
+}
+.rezept_zutaten, .rezept_zubereitung, .naehrwerte_links, .naehrwerte_rechts{
+    display: inline-block;
+    width: 49%;
+}
+.naehrwerte h1{
+    text-align: center
 }
 
 footer{
