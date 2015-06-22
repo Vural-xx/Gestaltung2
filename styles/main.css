@@ -8,6 +8,7 @@ html,body {
     background-color: black;
     color: white;
     font-family: Kameron;
+    margin: 0;
 }
 
 /* unvisited link */
@@ -81,6 +82,20 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#loader{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+}
+
+#loadburger{
+    left:30%;
+    top:20%;
+    width: 60%;
+    position: fixed;
+    margin: -28% 0 0 -10%;
 }
 
 #homeBanner{
