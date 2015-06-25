@@ -1,0 +1,475 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* WEBSITE BURGER */
+
+body {
+    font: 16px/1.5 'Raleway', Helvetica, Helvetica Neue, Arial, sans-serif;
+    background-color: #222222;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+/* =General */
+
+/* =Header */
+header {
+    background: url('../img/burger.jpg') no-repeat top center;
+    color: #fff;
+    text-align: center;
+    padding: 140px 0 20px 0;
+}
+    header h1 {
+        font-size: 1.5em;
+        line-height: 1.2em;
+        text-transform: uppercase;
+    }
+    header p {
+        color: #f3cc11;
+        line-height: 1.2em;
+    }
+
+/* =Profiles */
+main { }
+    #profiles {
+        background: url('../img/bcg_profiles.png') repeat-y top center;
+        color: #fff;
+        position: relative;
+        background-size: auto 45px;
+    }
+    .boxer {
+        width: 45%;
+        margin: 0 5%;
+        padding: 210px 0 20px 0;
+        position: relative;
+    }
+    .boxerA {
+        margin-left: 0;
+    }
+    .boxer h2 {
+        margin-top: 0;
+        font-size: 1.2em;
+        line-height: 1.2em;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .boxer p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+    }
+    .boxerA { float: left; margin-left: 0;}
+    .boxerB { float: right; margin-right: 0;}
+    .boxerImg {
+        width: 138px;
+        height: 152px;
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        margin-left: -69px;
+    }
+
+    .boxerA .boxerImg {
+        background: url('../img/img_boxerA.png') no-repeat top left;
+        background-size: 138px 152px;
+    }
+    .boxerB .boxerImg {
+        background: url('../img/img_boxerB.png') no-repeat top left;
+        background-size: 138px 152px;
+    }
+
+/* =Boxing Ring */
+#boxingRing {
+    background-color: #e7e7e7;
+    position: relative;
+    height: 344px;
+}
+    #stage {
+        width: 300px;
+        height: 273px;
+        background: url('../img/bcg_ring.png') no-repeat top right;
+        background-size: 300px 273px;
+        position: absolute;
+        top: 35px;
+        left: 50%;
+        margin-left: -150px;
+    }
+
+/* =Footer */
+footer {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+    /* =General */
+
+    /* =Header */
+
+    /* =Profiles */
+
+    /* =Boxing Ring */
+
+    /* =Footer */
+}
+
+@media only screen and (min-width: 768px) {
+    /* =General */
+
+#loader{
+    width: 100%;
+    height: 1000px;
+    background-color: black;
+    position: fixed;
+    margin: -30% 0 0 0;
+}
+
+#loadburger{
+    left:30%;
+    top:20%;
+    width: 60%;
+    position: fixed;
+    margin: -28% 0 0 -10%;
+}
+    /* =Header */
+    #burgericon{
+        background-image: url('../img/burgericon1.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        left: 50%;
+        width: 100px;
+        height: 200px;
+        position: absolute;
+        margin: 1% 0 0 -4%;
+        z-index: 1;
+    }
+    header {
+        background-image: url('../img/burger.jpg');
+        background-size:100%;
+        width: 100%;
+        height:400px;
+        background-repeat: no-repeat;
+        position: relative;
+        padding: 420px 0 20px 0;
+    }
+    header h1 {
+        font-size: 5.125em;
+        font-family: 'Love Ya Like A Sister', cursive;
+        color: #000000;
+    }
+    header p {
+        font-size: 3em;
+        line-height: 1.2em;
+        font-family: 'Love Ya Like A Sister', cursive;
+        color: #eb602b;
+    }
+    /* =Profiles */
+    #bgImage {
+        background-image: url('../img/background_tafel.jpg');
+        background-size:100%;
+        border-top: 8px solid white;
+        background-repeat: no-repeat;
+        position: relative;
+        width: 100%;
+        height: 900px;
+    }
+    .title{
+        margin: 0% 0% 0% -75%;
+    }
+    .untertitel{
+        margin: 0% 0% 0% -75%;
+    }
+        #bgImage:after {
+            top: 170px;
+            width: 150px;
+            margin-left: -78px;
+            font-size: 3.75em;
+       }
+
+       #rezept{
+        position: absolute;
+        float: left;
+        font-family: RockwellStd;
+        font-size: 1.1em;
+        width: 500px;
+        left: 5%;
+        top: 15%;
+
+       }
+       #naehrwerte{
+        background-image: url('../img/background_tafel.jpg');
+        background-size:100%;
+        border-top: 8px solid white;
+        background-repeat: no-repeat;
+        position: relative;
+        width: 100%;
+        height: 900px;
+
+       }
+       #pfeil{
+        position: absolute;
+        margin: -5% 0 0 35%;
+        width: 350px;
+       }
+         #vielicon{
+        position: absolute;
+        margin: -3% 0 0 80%;
+        width: 175px;
+       }
+
+       #naehrwerte h1{
+        font-family: 'Love Ya Like A Sister', cursive;
+        margin: 3% 0 0 42%;
+        font-size: 3em;
+
+       }
+       .textnaehrwerte{
+        position: absolute;
+        font-family: RockwellStd;
+        margin: 6% 0 0 2%;
+        width: 600px;
+        font-size: 1.1em;
+       }
+       #anleitung{
+        position: absolute;
+        font-family: RockwellStd;
+        font-size: 1.1em;
+        top: 8%;
+        left: 55%;
+        right: 2%;
+        float: left;
+       }
+       #rezeptstriche{
+        margin: -10% 0 0 -15%;
+        position: absolute;
+       }
+            #rezeptstriche1{
+        margin: -10% 0 0 120%;
+        position: absolute;
+       }
+
+       #anleitung h1{
+        font-family: 'Love Ya Like A Sister', cursive; 
+        font-size: 3em;
+       }
+       .rezeptlinks{
+        float: left;
+        font-family: RockwellStd;
+        
+       }
+       .rezeptrechts{
+        padding-left: 20px;
+        float: left;
+       }
+
+       #rezept h1{
+          font-family: 'Love Ya Like A Sister', cursive;
+          font-size: 3em;
+       }
+
+    /* =Boxing Ring */
+
+@media only screen and (min-width: 1140px) {
+    /* =General */
+
+    /* =Header */
+
+    /* =Profiles */
+
+    /* =Boxing Ring */
+
+    /* =Footer */
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
