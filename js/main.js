@@ -28,6 +28,11 @@ var burgeroben=$("#oben"),
 	ebene=$("#Ebene_1"),
 	rezept=$("#rezept"),
 	anleitung=$("#anleitung"),
+	gelb=$("#gelb"),
+	orange=$("#orange"),
+	rot=$("#rot"),
+	karotte=$("#karotte"),
+	kreis=$("#Kreis"),
 
 	tl;		
 
@@ -58,6 +63,11 @@ var burgeroben=$("#oben"),
 	tl.set([vielicon], {opacity:0});
 	tl.set([rezept],{yPercent:5, opacity:0});
 	tl.set([anleitung],{yPercent:5, opacity:0});
+	tl.set([karotte], {scale:0});
+	tl.set([rot], {scale:0});
+	tl.set([orange], {scale:0});
+	tl.set([gelb], {scale:0});
+	tl.set([kreis],{scale:0});
 
 
 	var controller = new ScrollMagic.Controller();
@@ -109,7 +119,12 @@ var scene=new ScrollMagic.Scene({triggerElement: "#burgericon"})
 			zwei.to([vielicon],0.3,{opacity:1},3);
 
 
-
+			var drei= new TimelineMax();
+			drei.to([kreis], 0.4,{scale:1},1),
+			drei.to([karotte],0.3,{scale:1, ease:Elastic.easeOut},1.3),
+			drei.to([gelb],0.3,{scale:1, ease:Elastic.easeOut},1.5),
+			drei.to([orange],0.3,{scale:1, ease:Elastic.easeOut},1.7),
+			drei.to([rot],0.3,{scale:1, ease:Elastic.easeOut},1.9);
 
 
 		var scene2=new ScrollMagic.Scene({triggerElement: "#profiles",triggerHook: 'onEnter'})
@@ -117,10 +132,13 @@ var scene=new ScrollMagic.Scene({triggerElement: "#burgericon"})
 		.addTo(controller)
 		.setTween(zwei);
 
+		var scene3=new ScrollMagic.Scene({triggerElement: "#naehrwerte",triggerHook: 'onEnter'})
 
 	
 
 
+	.addTo(controller)
+		.setTween(drei);
  
 
  
