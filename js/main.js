@@ -32,7 +32,17 @@ var burgeroben=$("#oben"),
 	orange=$("#orange"),
 	rot=$("#rot"),
 	karotte=$("#karotte"),
-	kreis=$("#Kreis"),
+	kreis=$("#kreis"),
+	teil1=$("#teil1"),
+	teil2=$("#teil2"),
+	teil3=$("#teil3"),
+	teil4=$("#teil4"),
+	teil5=$("#teil5"),
+	teil6=$("#teil6"),
+	teil7=$("#teil7"),
+	teil8=$("#teil8"),
+	teil9=$("#teil9"),
+
 
 	tl;		
 
@@ -67,8 +77,16 @@ var burgeroben=$("#oben"),
 	tl.set([rot], {scale:0});
 	tl.set([orange], {scale:0});
 	tl.set([gelb], {scale:0});
-	tl.set([kreis],{scale:0});
-
+	tl.set([kreis],{opacity:0});
+	tl.set([teil1],{scale:0});
+	tl.set([teil2],{scale:0});
+	tl.set([teil3],{scale:0});
+	tl.set([teil4],{scale:0});
+	tl.set([teil5],{scale:0});
+	tl.set([teil6],{scale:0});
+	tl.set([teil7],{scale:0});
+	tl.set([teil8],{scale:0});
+	tl.set([teil9],{scale:0});
 
 	var controller = new ScrollMagic.Controller();
 
@@ -120,7 +138,19 @@ var scene=new ScrollMagic.Scene({triggerElement: "#burgericon"})
 
 
 			var drei= new TimelineMax();
-			drei.to([kreis], 0.4,{scale:1},1.5),
+			drei.to([kreis], 0.5,{opacity:1},1.5),
+			drei.to([teil1], 1, {scale:1, ease:Elastic.easeOut},2),
+			drei.to([teil4], 1, {scale:1, ease:Elastic.easeOut},2.1),
+			drei.to([teil5], 1, {scale:1, ease:Elastic.easeOut},2.2),
+			drei.to([teil2], 1, {scale:1, ease:Elastic.easeOut},2.3),
+			drei.to([teil3], 1, {scale:1, ease:Elastic.easeOut},2.4),
+			drei.to([teil9], 1, {scale:1, ease:Elastic.easeOut},2.5),
+			drei.to([teil8], 1, {scale:1, ease:Elastic.easeOut},2.6),
+			drei.to([teil6], 1, {scale:1, ease:Elastic.easeOut},2.7),
+			drei.to([teil7], 1, {scale:1, ease:Elastic.easeOut},2.8),
+	
+
+
 			drei.to([karotte],0.3,{scale:1, ease:Elastic.easeOut},1.8),
 			drei.to([gelb],0.3,{scale:1, ease:Elastic.easeOut},2),
 			drei.to([orange],0.3,{scale:1, ease:Elastic.easeOut},2.2),
