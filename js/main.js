@@ -120,11 +120,11 @@ var scene=new ScrollMagic.Scene({triggerElement: "#burgericon"})
 
 
 			var drei= new TimelineMax();
-			drei.to([kreis], 0.4,{scale:1},1),
-			drei.to([karotte],0.3,{scale:1, ease:Elastic.easeOut},1.3),
-			drei.to([gelb],0.3,{scale:1, ease:Elastic.easeOut},1.5),
-			drei.to([orange],0.3,{scale:1, ease:Elastic.easeOut},1.7),
-			drei.to([rot],0.3,{scale:1, ease:Elastic.easeOut},1.9);
+			drei.to([kreis], 0.4,{scale:1},1.5),
+			drei.to([karotte],0.3,{scale:1, ease:Elastic.easeOut},1.8),
+			drei.to([gelb],0.3,{scale:1, ease:Elastic.easeOut},2),
+			drei.to([orange],0.3,{scale:1, ease:Elastic.easeOut},2.2),
+			drei.to([rot],0.3,{scale:1, ease:Elastic.easeOut},2.4);
 
 
 		var scene2=new ScrollMagic.Scene({triggerElement: "#profiles",triggerHook: 'onEnter'})
