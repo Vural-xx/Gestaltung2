@@ -87,6 +87,7 @@ var burgeroben=$("#oben"),
 	tl.set([teil7],{scale:0});
 	tl.set([teil8],{scale:0});
 	tl.set([teil9],{scale:0});
+	tl.set([pfeil], {scale:0});
 
 	var controller = new ScrollMagic.Controller();
 
@@ -132,9 +133,9 @@ var scene=new ScrollMagic.Scene({triggerElement: "#burgericon"})
 		zwei.to([rezept],0.3,{yPercent:0 , opacity:1},0.5),
 		zwei.to([anleitung],0.3,{yPercent:0 , opacity:1},0.5),
 		zwei.staggerFrom(rstrich, 0.05,{autoAlpha:0, scale: 0}, 0.1,'+=0.25'),
-		zwei.staggerFrom(rstrich1, 0.05,{autoAlpha:0, scale: 0}, 0.1,'+=0.25'),
-		zwei.staggerFrom(pfeil, 0.02,{autoAlpha:0, scale: 0}, 0.1,'+=0.8'),
-			zwei.to([vielicon],0.3,{opacity:1},3);
+		zwei.staggerFrom(rstrich1, 0.05,{autoAlpha:0, scale: 0}, 0.1,'+=0.25');
+		//zwei.staggerFrom(pfeil, 0.02,{autoAlpha:0, scale: 0}, 0.1,'+=0.8');
+		//zwei.to([vielicon],0.3,{opacity:1},3);
 
 
 			var drei= new TimelineMax();
@@ -157,12 +158,12 @@ var scene=new ScrollMagic.Scene({triggerElement: "#burgericon"})
 			drei.to([rot],0.3,{scale:1, ease:Elastic.easeOut},2.4);
 
 
-		var scene2=new ScrollMagic.Scene({triggerElement: "#profiles",triggerHook: 'onEnter'})
+		var scene2=new ScrollMagic.Scene({triggerElement: "#profiles"})
 	
 		.addTo(controller)
 		.setTween(zwei);
 
-		var scene3=new ScrollMagic.Scene({triggerElement: "#naehrwerte",triggerHook: 'onEnter'})
+		var scene3=new ScrollMagic.Scene({triggerElement: "#naehrwerte"})
 
 	
 
