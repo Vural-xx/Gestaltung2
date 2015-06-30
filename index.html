@@ -3,23 +3,15 @@
 <head>
     <meta charset="utf-8">
   <title>Grillich - Hier Grill ich, für mich</title>
-  <link rel="stylesheet" type="text/css" href="styles/main.css">
-  <link rel="stylesheet" type="text/css" href="styles/menu.css">
-  <link rel="stylesheet" type="text/css" href="styles/queries.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css"/>
+  <link rel="stylesheet" type="text/css" href="styles/sidemenu.css"/>
 </head>
-<body class="cbp-spmenu-push">
+<body>
   <header>
     <img id="logo" src="img/logo.png" alt="Grillich Logo">  
   </header>
-  <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
-    <h3>Menu</h3>
-    <a href="#">Celery seakale</a>
-    <a href="#">Dulse daikon</a>
-    <a href="#">Zucchini garlic</a>
-    <a href="#">Catsear azuki bean</a>
-    <a href="#">Dandelion bunya</a>
-    <a href="#">Rutabaga</a>
-  </nav>
+  <!-- SideMenu -->
+  <div id="menu" class="sm-main"></div>
   <div id="main">
     <div id="banner" class="banner_home">
       <img id="homeBanner" src="img/Banner_feuer.png" alt="Banner"/>  
@@ -65,7 +57,9 @@
   <!-- Einbinden der Skripte -->
   <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="js/jquery.bxslider.min.js"></script>
+  <script src="js/SideMenu.js"></script>
+  <script src="js/tapclick.js"></script>
   <script src="js/classie.js"></script>
-  <script src="js/script.js"></script
+  <script src="js/script.js"></script>
 </body>
 </html>
