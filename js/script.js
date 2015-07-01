@@ -5,87 +5,55 @@
         };
         // Creating the master menu (SideMenu)
         sideMenu = new SideMenu([
-          new SMLabelItem("The First Item Added!")
         ]);
-
-
-        // Adding items with events ("Share")
-        sideMenu.addItem(new SMSubMenuItem("Share", [
-            new SMButtonItem("Facebook", function () {
-                window.open('http://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(location));
-            }, "fb"),
-            new SMButtonItem("Twitter", function () {
-                window.open('https://twitter.com/intent/tweet?text=SideMenu.js&url=' + encodeURIComponent(location));
-            }, "tw"),
-            new SMButtonItem("Google+", function () {
-                window.open('https://plus.google.com/share?hl=es-419&url=' + encodeURIComponent(location));
-            }, "gp"),
-            new SMButtonItem("Pinterest", function () {
-                alert("Pinterest Share");
-            }, "pin")
-        ]));
-
-
-        // Adding mix items ("Animals")
-        sideMenu.addItem(new SMSubMenuItem("Animals", [
-            new SMLinkItem("Bunny", "https://www.google.com.pe/?#q=Bunny"),
-            new SMLinkItem("Tiger", "https://www.google.com.pe/?#q=Tiger"),
-            new SMLinkItem("Dog", "https://www.google.com.pe/?#q=Dog"),
-            new SMLinkItem("Cat", "https://www.google.com.pe/?#q=Cat", "_blank"),
-            new SMSubMenuItem("Birds", [
-                new SMLinkItem("Eagle", "https://www.google.com.pe/?#q=eagle"),
-                new SMLabelItem("Hawk"),
-                new SMLabelItem("Tucan"),
-                new SMButtonItem("Parrot", function () {
-                    alert("Hello World!")
-                }),
-                new SMLabelItem("Chicken"),
-                new SMLabelItem("Duck")
-            ]),
-            new SMLabelItem("Pig"),
-            new SMLinkItem("Crocodile", "https://www.google.com.pe/?#q=Crocodile")
-        ]));
-
-
-        // Adding simple label items
-        sideMenu.addItem(new SMSubMenuItem("Continents", [
-            new SMLabelItem("Europe"),
-            new SMLabelItem("Asia"),
-            new SMLabelItem("Africa"),
-            new SMSubMenuItem("North America", [
-                new SMLabelItem("Canada"),
-                new SMLabelItem("Mexico"),
-                new SMLabelItem("United States")
-            ]),
-            new SMLabelItem("Center America"),
-            new SMSubMenuItem("South America", [
-                new SMLabelItem("Argentina"),
-                new SMLabelItem("Bolivia"),
-                new SMLabelItem("Brasil"),
-                new SMLabelItem("Colombia"),
-                new SMLabelItem("Chile"),
-                new SMLabelItem("Ecuador"),
-                new SMLabelItem("Paraguay"),
-                new SMSubMenuItem("Perú", [
-                    new SMLabelItem("Lima"),
-                    new SMLabelItem("Trujillo"),
-                    new SMLabelItem("Loreto"),
-                    new SMLabelItem("Cuzco"),
-                    new SMLabelItem("Puno"),
-                    new SMLabelItem("Cajamarca"),
-                    new SMLabelItem("etc..")
-                ]),
-                new SMLabelItem("Uruguay")
-            ]),
-            new SMLabelItem("Oceanía"),
-            new SMLabelItem("Antartida")
-        ]));
-
 
         // Adding new item
         sideMenu.addItem(
-            new SMButtonItem("Download File", function(){
-              alert("Go Download File!");
+            new SMButtonItem("Home", function () {
+                window.location.href = "index.html";
+            })
+        );
+
+        // Adding items with events ("Share")
+        sideMenu.addItem(new SMSubMenuItem("Rezepte", [
+            new SMSubMenuItem("Fleischgerichte", [
+                new SMButtonItem("Hamburger", function () {
+                    window.location.href = "index.html";
+                }),
+                new SMButtonItem("Steak", function () {
+                    window.location.href = "index.html";
+                }),
+                 new SMButtonItem("Schnitzel", function () {
+                    window.location.href = "index.html";
+                })
+            ]),
+            new SMSubMenuItem("Fischgerichte", [
+                new SMButtonItem("Lachs", function () {
+                    window.location.href = "index.html";
+                }),
+                new SMButtonItem("Dachs mit Lachs im Maul", function () {
+                    window.location.href = "index.html";
+                }),
+                 new SMButtonItem("Fax mit Dachs mit Lachs im Maul", function () {
+                    window.location.href = "index.html";
+                })
+            ]),
+            new SMSubMenuItem("Vegetarisch", [
+                 new SMButtonItem("Fleischsalat", function () {
+                    window.location.href = "index.html";
+                }),
+                new SMButtonItem("Obstsalat", function () {
+                    window.location.href = "index.html";
+                }),
+                 new SMButtonItem("Salat", function () {
+                    window.location.href = "index.html";
+                })
+            ]),
+        ]));
+
+        sideMenu.addItem(
+            new SMButtonItem("Fleisch", function () {
+                window.location.href = "index.html";
             })
         );
 
@@ -122,8 +90,7 @@
 
         // Adding custom item
         sideMenu.addItem(new SMUserAccountItem(
-          "Ana Cueva",
-          "https://dl.dropboxusercontent.com/u/30078937/sidemenu-foto.jpg"
+          "Grillich"
         ), 0 /* index cero, first element */ );
 
 
@@ -132,7 +99,7 @@
             sideMenu.appendTo(document.getElementById('menu'));
         });
 
- $("#logo").one(evt, function (e) {
+    $("#logo").one(evt, function (e) {
          e.preventDefault();
          sideMenu.open();
          next.call(this);
