@@ -33,15 +33,26 @@ var burgeroben=$("#oben"),
 	rot=$("#rot"),
 	karotte=$("#karotte"),
 	kreis=$("#kreis"),
-	teil1=$("#teil1"),
-	teil2=$("#teil2"),
-	teil3=$("#teil3"),
-	teil4=$("#teil4"),
-	teil5=$("#teil5"),
-	teil6=$("#teil6"),
-	teil7=$("#teil7"),
-	teil8=$("#teil8"),
-	teil9=$("#teil9"),
+	teil1=$("#kuchen1"),
+	teil2=$("#kuchen2"),
+	teil3=$("#kuchen3"),
+	teil4=$("#kuchen4"),
+	teil5=$("#kuchen5"),
+	teil6=$("#kuchen6"),
+	teil7=$("#kuchen7"),
+	teil8=$("#kuchen8"),
+	teil9=$("#kuchen9"),
+	teiloben=$("#Teil_vorn"),
+	teil2oben=$("#Teil_2_oben"),
+	teil3oben=$("#Teil_3_oben"),
+	teil4oben=$("#Teil_4_oben"),
+	teilunten=$("#Ebene_11"),
+	teil2unten=$("#Teil_2_unten"),
+	teil3unten=$("#Teil_3_unten"),
+	teilhinten=$("#Teil_hinten"),
+	test=$(".wurst"),
+	fleischpopup=$("#fleischpopup"),
+
 
 
 	tl;		
@@ -88,6 +99,48 @@ var burgeroben=$("#oben"),
 	tl.set([teil8],{scale:0});
 	tl.set([teil9],{scale:0});
 	tl.set([pfeil], {scale:0});
+	// KuhTeile
+	tl.set([teiloben], {opacity:0});
+	tl.set([teil2oben], {opacity:0});
+	tl.set([teil3oben], {opacity:0});
+	tl.set([teil4oben], {opacity:0});
+	tl.set([teilunten], {opacity:0});
+	tl.set([teil2unten], {opacity:0});
+	tl.set([teil3unten], {opacity:0});
+	tl.set([teilhinten], {opacity:0});
+	tl.set([fleischpopup], {yPercent:10, opacity:0});
+
+
+	teiloben=$("#Teil_vorn"),
+	teil2oben=$("#Teil_2_oben"),
+	teil3oben=$("#Teil_3_oben"),
+	teil4oben=$("#Teil_4_oben"),
+	teilunten=$("#Ebene_11"),
+	teil2unten=$("#Teil_2_unten"),
+	teil3unten=$("#Teil_3_unten"),
+	teilhinten=$("#Teil_hinten"),
+	(teiloben).hover(over, out);
+	(teil2oben).hover(over, out);
+	(teil3oben).hover(over, out);
+	(teil4oben).hover(over, out);
+	(teilunten).hover(over, out);
+	(teil2unten).hover(over, out);
+	(teil3unten).hover(over, out);
+	(teilhinten).hover(over, out);
+
+	function over(){
+  TweenMax.to(this, 0.2, {opacity:1}, 0.2),
+
+  TweenMax.fromTo(test, 0.5, {drawSVG:"0%"},{drawSVG:"100%"},0),
+   TweenMax.to(fleischpopup,0.5,{yPercent:0,opacity:1},2);
+}
+
+function out(){
+  TweenMax.to(this, 0.5, {opacity:0},0.2);
+  TweenMax.to(fleischpopup,0.5,{yPercent:10,opacity:0},1);
+  TweenMax.fromTo([test], 0.5, {drawSVG:"100%"},{drawSVG:"0%"},0.5);
+}
+
 
 	var controller = new ScrollMagic.Controller();
 
@@ -124,6 +177,11 @@ var tlCurtain=new TimelineMax();
 
 
 
+	var vier= new TimelineMax();
+	  vier.fromTo([test], 1, {drawSVG:"0%"},{drawSVG:"100%"},1);
+
+
+
 var scene=new ScrollMagic.Scene({triggerElement: "#burgericon"})
 	
 		.addTo(controller)
@@ -140,15 +198,15 @@ var scene=new ScrollMagic.Scene({triggerElement: "#burgericon"})
 
 			var drei= new TimelineMax();
 			drei.to([kreis], 0.5,{opacity:1},1.5),
-			drei.to([teil1], 1, {scale:1, ease:Elastic.easeOut},2),
-			drei.to([teil4], 1, {scale:1, ease:Elastic.easeOut},2.1),
-			drei.to([teil5], 1, {scale:1, ease:Elastic.easeOut},2.2),
-			drei.to([teil2], 1, {scale:1, ease:Elastic.easeOut},2.3),
-			drei.to([teil3], 1, {scale:1, ease:Elastic.easeOut},2.4),
-			drei.to([teil9], 1, {scale:1, ease:Elastic.easeOut},2.5),
-			drei.to([teil8], 1, {scale:1, ease:Elastic.easeOut},2.6),
-			drei.to([teil6], 1, {scale:1, ease:Elastic.easeOut},2.7),
-			drei.to([teil7], 1, {scale:1, ease:Elastic.easeOut},2.8),
+			drei.to([kuchen1], 1, {scale:1, ease:Elastic.easeOut},2),
+			drei.to([kuchen2], 1, {scale:1, ease:Elastic.easeOut},2.1),
+			drei.to([kuchen3], 1, {scale:1, ease:Elastic.easeOut},2.2),
+			drei.to([kuchen4], 1, {scale:1, ease:Elastic.easeOut},2.3),
+			drei.to([kuchen5], 1, {scale:1, ease:Elastic.easeOut},2.4),
+			drei.to([kuchen6], 1, {scale:1, ease:Elastic.easeOut},2.5),
+			drei.to([kuchen7], 1, {scale:1, ease:Elastic.easeOut},2.6),
+			drei.to([kuchen8], 1, {scale:1, ease:Elastic.easeOut},2.7),
+			drei.to([kuchen9], 1, {scale:1, ease:Elastic.easeOut},2.8),
 	
 
 
@@ -172,7 +230,6 @@ var scene=new ScrollMagic.Scene({triggerElement: "#burgericon"})
 		.setTween(drei);
  
 
- 
 
 
 
