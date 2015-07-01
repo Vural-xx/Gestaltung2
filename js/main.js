@@ -52,6 +52,7 @@ var burgeroben=$("#oben"),
 	teilhinten=$("#Teil_hinten"),
 	test=$(".wurst"),
 	fleischpopup=$("#fleischpopup"),
+	kuh=$("#Kuh"),
 
 
 
@@ -109,6 +110,7 @@ var burgeroben=$("#oben"),
 	tl.set([teil3unten], {opacity:0});
 	tl.set([teilhinten], {opacity:0});
 	tl.set([fleischpopup], {yPercent:10, opacity:0});
+	tl.set([test], {opacity:0});
 
 
 	teiloben=$("#Teil_vorn"),
@@ -129,15 +131,18 @@ var burgeroben=$("#oben"),
 	(teilhinten).hover(over, out);
 
 	function over(){
+		TweenMax.to([kuh],0.5,{opacity:0.5},0),
   TweenMax.to(this, 0.2, {opacity:1}, 0.2),
-
+TweenMax.to([test], 0.5, {opacity:1},0.5),
   TweenMax.fromTo(test, 0.5, {drawSVG:"0%"},{drawSVG:"100%"},0),
    TweenMax.to(fleischpopup,0.5,{yPercent:0,opacity:1},2);
 }
 
 function out(){
+	TweenMax.to([kuh],0.5,{opacity:1},0),
   TweenMax.to(this, 0.5, {opacity:0},0.2);
   TweenMax.to(fleischpopup,0.5,{yPercent:10,opacity:0},1);
+  TweenMax.to([test], 0.5, {opacity:0},0.5),
   TweenMax.fromTo([test], 0.5, {drawSVG:"100%"},{drawSVG:"0%"},0.5);
 }
 
