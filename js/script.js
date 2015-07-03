@@ -99,7 +99,7 @@
             sideMenu.appendTo(document.getElementById('menu'));
         });
 
-    $("#menuknopf").one(evt, function (e) {
+    $("#menuknopf").click(evt, function (e) {
          e.preventDefault();
          sideMenu.open();
          next.call(this);
