@@ -8,6 +8,10 @@
     SideMenu.js
 ========================================================================== 
 */
+
+#menu{
+  font-family: LoveYa;
+}
     
 .sm-wrapper {
     overflow: hidden;
@@ -19,6 +23,7 @@
 }
 
 .sm-main {
+    font-family: LoveYa;
     font-size: 10px;
     position: fixed;
     right: 0;

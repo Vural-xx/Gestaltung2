@@ -90,7 +90,7 @@
 
         // Adding custom item
         sideMenu.addItem(new SMUserAccountItem(
-          "Grillich"
+          "Menu"
         ), 0 /* index cero, first element */ );
 
 
