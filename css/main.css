@@ -62,7 +62,6 @@ textarea {
 body {
     font: 16px/1.5 'Raleway', Helvetica, Helvetica Neue, Arial, sans-serif;
     background-color: #222222;
-    font-size: 1vw;
 }
 
 .wrapper {
@@ -167,7 +166,16 @@ footer {
    ========================================================================== */
 
 @media only screen and (min-width: 480px) {
-    /* =General */
+           #menuknopf {
+        background-image: url('../img/buttonmenu.png');
+        background-size: 100%;
+        position: fixed;
+        z-index: 10;
+        border: 2px solid blue;
+        width: 100px;
+        height: 100px;
+       }
+
 
     /* =Header */
 
@@ -254,7 +262,7 @@ footer {
     #bgImage {
         background-image: url('../img/background_tafel.jpg');
         background-size:100%;
-        border-top: 8px solid white;
+        border-top: 4px solid #eb602b;
         background-repeat: no-repeat;
         position: relative;
         width: 100%;
@@ -286,7 +294,7 @@ footer {
        #naehrwerte{
         background-image: url('../img/background_tafel.jpg');
         background-size:100%;
-        border-top: 8px solid white;
+        border-top: 4px solid #eb602b;
         background-repeat: no-repeat;
         position: relative;
         width: 100%;
@@ -397,8 +405,44 @@ footer {
        #fleischpopup p{
         font-family: RockwellStd;
         font-size: 1.1em;
+        position: relative;
 
        }
+
+       .rib{
+        position: absolute;
+       }
+
+       .chuck{
+        position: absolute;
+       }
+
+       .shortloin{
+        position: absolute;
+       }
+
+       .sirloin{
+        position: absolute;
+       }
+       .round{
+        position: absolute;
+       }
+        
+        .flank{
+        position: absolute;
+       }
+
+        .shortplate{
+        position: absolute;
+       }
+
+        .brisfor{
+        position: absolute;
+       }
+        
+
+
+
        #menuknopf {
         background-image: url('../img/buttonmenu.png');
         background-size: 100%;
