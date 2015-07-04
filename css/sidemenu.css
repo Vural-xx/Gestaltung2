@@ -72,7 +72,7 @@
     -moz-transition: -moz-transform .7s cubic-bezier(.65,.22,0,.98), opacity .7s linear;
     transition: transform .7s cubic-bezier(.65,.22,0,.98), opacity .7s linear;
     background: black;
-    height: auto;
+    min-height: 100%;
     left: 0;
     overflow: hidden;
     overflow-y: auto;
