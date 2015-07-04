@@ -196,6 +196,26 @@ footer {
         position: relative;
         padding: 420px 0 20px 0;
     }
+        #headerSpiesse{
+        background-image: url('../img/spiess1.jpg');
+        background-size:100%;
+        width: 100%;
+        height:300px;
+        background-repeat: no-repeat;
+        position: relative;
+        padding: 420px 0 20px 0;
+    }
+
+      }
+        #headerVege{
+        background-image: url('../img/vegetarisch.jpg');
+        background-size:100%;
+        width: 100%;
+        height:300px;
+        background-repeat: no-repeat;
+        position: relative;
+        padding: 420px 0 20px 0;
+    }
 
         #burgericon{
         background-image: url('../img/burgericon1.png');
