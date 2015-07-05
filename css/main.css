@@ -208,7 +208,7 @@ footer {
         padding: 420px 0 20px 0;
     }
         #headerSpiesse{
-        background-image: url('../img/spiess1.jpg');
+        background-image: url('../img/steak.jpg');
         background-size:100%;
         width: 100%;
         height:300px;
@@ -240,7 +240,7 @@ footer {
         z-index: 1;
     }
      #headerIndex{
-        background-image: url('../img/spiess.jpg');
+        background-image: url('../img/fire-01.jpg');
         background-size:100%;
         width: 100%;
         height:300px;
@@ -494,6 +494,9 @@ footer {
     .striche{
         visibility: hidden;
         display: none;
+    }
+    #kuhstueck{
+        padding-left: 20px;
     }
 
            #fleischpopup{
@@ -1043,7 +1046,7 @@ footer {
 
 /*MAX360*/
 @media only screen and (max-width: 360px) {
-        #loader{
+           #loader{
     width: 100%;
     height: 1000px;
     background-color: black;
@@ -1052,6 +1055,8 @@ footer {
     visibility: hidden;
     display: none;
 }
+
+
 
 #loadburger{
     left:30%;
@@ -1063,18 +1068,6 @@ footer {
     display: none;
 }
 
-#burgericonOhneAni{
-        background-image: url('../img/burgericon1.png');
-        background-size: 100%;
-        background-repeat: no-repeat;
-        left: 42%;
-        width: 70px;
-        height: 200px;
-        position: absolute;
-        margin: 1% 0 0 -4%;
-        z-index: 1;
-    }
-
  #headerBurger{
         background-image: url('../img/burger.jpg');
         background-size:100%;
@@ -1085,7 +1078,7 @@ footer {
         padding: 235px 0 20px 0;
     }
         #headerSpiesse{
-        background-image: url('../img/spiess1.jpg');
+        background-image: url('../img/steak.jpg');
         background-size:100%;
         width: 100%;
         height:300px;
@@ -1105,6 +1098,29 @@ footer {
         padding: 235px 0 20px 0;
     }
 
+      #block{
+        position: relative;
+        float: left;
+        font-family: 'Rokkitt';
+        font-weight: 700;
+        text-align: justify;
+        font-size: 0.9em;
+        padding-left: 20px;
+        padding-right: 10px;
+        width: 280px;
+    }
+
+    #kuhstueck{
+              font-family: 'Love Ya Like A Sister', cursive;
+        font-size: 0.5em;
+        position: absolute;
+        margin: 0 0 0 5%;
+    }
+#block h1{
+        font-family: 'Love Ya Like A Sister', cursive;
+        font-size: 3em;
+       }
+
         #burgericon{
         background-image: url('../img/burgericon1.png');
         background-size: 100%;
@@ -1117,7 +1133,7 @@ footer {
         z-index: 1;
     }
      #headerIndex{
-        background-image: url('../img/spiess1.jpg');
+        background-image: url('../img/fire-01.jpg');
         background-size:100%;
         width: 100%;
         height:300px;
@@ -1128,7 +1144,7 @@ footer {
         header h1 {
         font-size: 2em;
         font-family: 'Love Ya Like A Sister', cursive;
-        color: #000000;
+        color: #ffffff;
         position: absolute;
         margin: -20% 0 0 0;
     }
@@ -1160,7 +1176,7 @@ footer {
    #rezept{
         position: absolute;
         float: left;
-        font-family: 'Rokkitt';
+                font-family: 'Rokkitt';
         font-weight: 700;
         font-size: 1.1em;
         width: 20px;
@@ -1187,7 +1203,6 @@ footer {
         margin:-200% 0 0 200%;
                 font-family: 'Rokkitt';
         font-weight: 700;
-
         
        }
        .rezeptrechts{
@@ -1278,13 +1293,13 @@ footer {
         }
 
         #footer .Facebook{
-            margin-left: 38%;
+            margin-left: 34%;
             margin-top: 20px;
             position: absolute;
         }
 
         #footer .Twitter{
-            margin-left: 52%;
+            margin-left: 50%;
             margin-top: 20px;
             position: absolute;
         }
@@ -1294,7 +1309,8 @@ footer {
             font-size: 110%;
             font-weight: bold;
             position: absolute;
-            margin-left: 34%;
+            color: white;
+            margin-left: 25%;
             margin-top: 90px;
         }
         #footer .follow{
@@ -1310,10 +1326,11 @@ footer {
 
         #footer .Kontakt{
             margin-top: 127px;
-            margin-left: 29%;
+            margin-left: 19%;
             height: 30px;
             width: 200px;
             background-color: rgb(48,48,48);
+            color: white;
             position: absolute;
         }
 
@@ -1322,7 +1339,7 @@ footer {
             color: white;
             font-family: 'Helvetica', bold;
             position: absolute;
-            margin-left: 37%;
+            margin-left: 30%;
             margin-top: 130px;
             text-decoration: none;
         }
@@ -1333,7 +1350,7 @@ footer {
             font-size: 110%;
             font-weight: bold;
             position: absolute;
-            margin-left: 39%;
+            margin-left: 35%;
             margin-top: 190px;
             text-decoration: none;
         }
@@ -1353,6 +1370,7 @@ footer {
         font-size: 4em;
         font-family: 'Love Ya Like A Sister', cursive;
         color: #000000;
+        margin-top: -20%;
     }
     #head p {
         font-size: 3em;
