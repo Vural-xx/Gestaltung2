@@ -28,20 +28,12 @@ var burgeroben=$("#oben"),
 	ebene=$("#Ebene_1"),
 	rezept=$("#rezept"),
 	anleitung=$("#anleitung"),
-	gelb=$("#gelb"),
-	orange=$("#orange"),
-	rot=$("#rot"),
-	karotte=$("#karotte"),
+
 	kreis=$("#kreis"),
 	teil1=$("#kuchen1"),
 	teil2=$("#kuchen2"),
 	teil3=$("#kuchen3"),
 	teil4=$("#kuchen4"),
-	teil5=$("#kuchen5"),
-	teil6=$("#kuchen6"),
-	teil7=$("#kuchen7"),
-	teil8=$("#kuchen8"),
-	teil9=$("#kuchen9"),
 	teiloben=$("#Teil_vorn"),
 	teil2oben=$("#Teil_2_oben"),
 	teil3oben=$("#Teil_3_oben"),
@@ -85,20 +77,13 @@ var burgeroben=$("#oben"),
 	tl.set([vielicon], {opacity:0});
 	tl.set([rezept],{yPercent:5, opacity:0});
 	tl.set([anleitung],{yPercent:5, opacity:0});
-	tl.set([karotte], {scale:0});
-	tl.set([rot], {scale:0});
-	tl.set([orange], {scale:0});
-	tl.set([gelb], {scale:0});
+
 	tl.set([kreis],{opacity:0});
 	tl.set([teil1],{scale:0});
 	tl.set([teil2],{scale:0});
 	tl.set([teil3],{scale:0});
 	tl.set([teil4],{scale:0});
-	tl.set([teil5],{scale:0});
-	tl.set([teil6],{scale:0});
-	tl.set([teil7],{scale:0});
-	tl.set([teil8],{scale:0});
-	tl.set([teil9],{scale:0});
+
 	tl.set([pfeil], {scale:0});
 	// KuhTeile
 	tl.set([teiloben], {opacity:0});
@@ -206,19 +191,7 @@ var scene=new ScrollMagic.Scene({triggerElement: "#burgericon"})
 			drei.to([kuchen1], 1, {scale:1, ease:Elastic.easeOut},2),
 			drei.to([kuchen2], 1, {scale:1, ease:Elastic.easeOut},2.1),
 			drei.to([kuchen3], 1, {scale:1, ease:Elastic.easeOut},2.2),
-			drei.to([kuchen4], 1, {scale:1, ease:Elastic.easeOut},2.3),
-			drei.to([kuchen5], 1, {scale:1, ease:Elastic.easeOut},2.4),
-			drei.to([kuchen6], 1, {scale:1, ease:Elastic.easeOut},2.5),
-			drei.to([kuchen7], 1, {scale:1, ease:Elastic.easeOut},2.6),
-			drei.to([kuchen8], 1, {scale:1, ease:Elastic.easeOut},2.7),
-			drei.to([kuchen9], 1, {scale:1, ease:Elastic.easeOut},2.8),
-	
-
-
-			drei.to([karotte],0.3,{scale:1, ease:Elastic.easeOut},1.8),
-			drei.to([gelb],0.3,{scale:1, ease:Elastic.easeOut},2),
-			drei.to([orange],0.3,{scale:1, ease:Elastic.easeOut},2.2),
-			drei.to([rot],0.3,{scale:1, ease:Elastic.easeOut},2.4);
+			drei.to([kuchen4], 1, {scale:1, ease:Elastic.easeOut},2.3);
 
 
 		var scene2=new ScrollMagic.Scene({triggerElement: "#profiles"})

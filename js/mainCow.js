@@ -70,10 +70,10 @@ var
 	(teil2oben).hover(overRib, outRib);
 	(teil3oben).hover(overShortloin, outShortloin);
 	(teil4oben).hover(overSirloin, outSirloin);
-	(teilunten).hover(overChuck, outChuck);
+	(teilunten).hover(overBrisfor, outBrisfor);
 	(teilhinten).hover(overRound, outRound);
 	(teil3unten).hover(overFlank, outFlank);
-	(teil2unten).hover(overBrisfor, outBrisfor);
+	(teil2unten).hover(overShortplate, outShortplate);
 
 
 
@@ -188,7 +188,21 @@ var
   		TweenMax.to([test], 0.5, {opacity:0},0.5),
   		TweenMax.fromTo([test], 0.5, {drawSVG:"100%"},{drawSVG:"0%"},0.5);
 	}
+function overShortplate(){
+		TweenMax.to([kuh],0.5,{opacity:0.5},0),
+  		TweenMax.to(this, 0.2, {opacity:1}, 0.2),
+		TweenMax.to([test], 0.5, {opacity:1},0.5),
+  		TweenMax.fromTo(test, 0.5, {drawSVG:"0%"},{drawSVG:"100%"},0),
+   		TweenMax.to(shortplate,0.5,{yPercent:0,opacity:1},2);
+	}
 
+	function outShortplate(){
+		TweenMax.to([kuh],0.5,{opacity:1},0),
+  		TweenMax.to(this, 0.5, {opacity:0},0.2);
+  		TweenMax.to(shortplate,0.5,{yPercent:10,opacity:0},1);
+  		TweenMax.to([test], 0.5, {opacity:0},0.5),
+  		TweenMax.fromTo([test], 0.5, {drawSVG:"100%"},{drawSVG:"0%"},0.5);
+	}
 
 
 

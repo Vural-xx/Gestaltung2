@@ -19,8 +19,8 @@
                 new SMButtonItem("Burger", function () {
                     window.location.href = "burger.html";
                 }),
-                new SMButtonItem("Spieße", function () {
-                    window.location.href = "spieße.html";
+                new SMButtonItem("Steak", function () {
+                    window.location.href = "steak.html";
                 }),
                  new SMButtonItem("Veggy Spieße", function () {
                     window.location.href = "vegetarisch.html";
