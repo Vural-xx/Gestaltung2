@@ -759,7 +759,7 @@ footer {
         float: left;
         font-family: 'Rokkitt';
         font-weight: 700;
-        font-size: 0.9em;
+        font-size: 1.1em;
         width: 1000px;
         left: 12%;
         top: 8%;
@@ -908,6 +908,13 @@ footer {
         height: 20%;
         margin: 22% 0 0 5%;
        }
+       #fleischpopup h1{
+        font-family: 'Love Ya Like A Sister', cursive;
+        font-weight: 700;
+        font-size: 2em;
+        position: relative;
+
+       }
        #fleischpopup p{
         font-family: 'Rokkitt';
         font-weight: 700;
@@ -951,13 +958,13 @@ footer {
 
 
        #menuknopf {
-        background-image: url('../img/buttonmenu1.png');
+        background-image: url('../img/buttonmenu2.png');
         background-size: 100%;
         background-repeat: no-repeat;
         position: fixed;
         z-index: 10;
-        border-right: 1px solid white;
-        border-bottom: 1px solid white;
+        margin-top: 20px;
+        margin-left: 20px;
         width: 50px;
         height: 50px;
  
@@ -965,7 +972,7 @@ footer {
        }
 
           #footer .Facebook{
-        margin-left: 45.5%;
+        margin-left: 45%;
         margin-top: 50px;
         position: absolute;
        }
@@ -1003,6 +1010,7 @@ footer {
         width: 200px;
         background-color: rgb(48,48,48);
         position: absolute;
+        display: none;
        }
 
        #footer .mail{
@@ -1399,8 +1407,15 @@ footer {
         width: 80%;
         margin: 75% 0 0 7%;
        }
+       #fleischpopup h1{
+        font-family: 'Rokkitt';
+        font-weight: 700;
+        font-size: 2em;
+        position: relative;
+
+       }
        #fleischpopup p{
-                font-family: 'Rokkitt';
+        font-family: 'Rokkitt';
         font-weight: 700;
         position: relative;
 
@@ -1463,6 +1478,12 @@ footer {
     visibility: hidden;
     display: none;
 }
+#fleischpopup h1{
+        font-family: 'Rokkitt';
+        font-weight: 700;
+        font-size: 2em;
+        position: relative;
+       }
 
  #headerBurger{
         background-image: url('../img/burger.jpg');
@@ -1471,16 +1492,72 @@ footer {
         height:300px;
         background-repeat: no-repeat;
         position: relative;
-        padding: 175px 0 20px 0;
+        padding: 150px 0 20px 0;
     }
         #headerSpiesse{
-        background-image: url('../img/spiess1.jpg');
+        background-image: url('../img/steak.jpg');
         background-size:100%;
         width: 100%;
         height:300px;
         background-repeat: no-repeat;
         position: relative;
-        padding: 175px 0 20px 0;
+        padding: 150px 0 20px 0;
+    }
+    #kastenBurger{
+        width: 220px;
+        height: 60px;
+        margin-top: -30px;
+        margin-left: -30px;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    #kastenFleisch{
+        width: 220px;
+        height: 60px;
+        margin-top: -30px;
+        margin-left: -30px;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+     #kastenSteak{
+        width: 220px;
+        height: 60px;
+        margin-top: -30px;
+        margin-left: -30px;
+        background-color: rgba(0,0,0,0.5);
+    }
+     #kastenVegetarisch{
+        width: 255px;
+        height: 100px;
+        margin-top: -100px;
+        margin-left: -30px;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+
+    .title{
+        margin-top: 5px;
+        margin-left: 40px;
+        color: white;
+    }
+
+
+    .untertitel{
+        margin-top: 36px;
+        margin-left: 40px;
+    }
+
+    .title2{
+        margin-top: 5px;
+        margin-left: 40px;
+        text-align: left;
+        color: white;
+    }
+
+    .untertitel2{
+        margin-top: 75px;
+        margin-left: 40px;
+        text-align: left;
     }
 
       
@@ -1510,24 +1587,16 @@ footer {
               font-family: 'Love Ya Like A Sister', cursive;
         font-size: 0.5em;
         position: absolute;
-        margin: 0 0 0 5%;
+        margin: 0 0 0 -5%;
+        width: 200px;
     }
+
 #block h1{
         font-family: 'Love Ya Like A Sister', cursive;
         font-size: 3em;
        }
 
-        #burgericon{
-        background-image: url('../img/burgericon1.png');
-        background-size: 100%;
-        background-repeat: no-repeat;
-        left: 48%;
-        width: 70px;
-        height: 200px;
-        position: absolute;
-        margin: 1% 0 0 -10%;
-        z-index: 1;
-    }
+
      #headerIndex{
         background-image: url('../img/fire-01.jpg');
         background-size:100%;
@@ -1553,6 +1622,7 @@ footer {
         position: absolute;
     }
 
+
      #bgImage {
         background-size:100%;
         border-top: 4px solid #eb602b;
@@ -1577,7 +1647,7 @@ footer {
         font-size: 1.1em;
         width: 20px;
         left: 12%;
-        top: 15%;
+        top: 10%;
         margin: -23% 0 0 -10%;
 
        }
@@ -1588,8 +1658,9 @@ footer {
        }
              #rezept h1{
           font-family: 'Love Ya Like A Sister', cursive;
-          font-size: 2em;
+          font-size: 1.9em;
           margin-left: 30%;
+          width: 250px;
           padding-bottom: 20px;
        }
 
@@ -1620,6 +1691,11 @@ footer {
         padding-bottom: 200px;
 
        }
+
+       #burgericonOhneAni{
+        width: 70px;
+        margin-left: -2px;
+       }
          #anleitung h1{
         font-family: 'Love Ya Like A Sister', cursive; 
         font-size: 2em;
@@ -1628,9 +1704,9 @@ footer {
        }
 
         #rezeptstriche1{
-        margin: 2500% 0 0 -150%;
+        margin: 2650% 0 0 -150%;
         position: absolute;
-        width: 350px;
+        width: 300px;
        }
 
           #naehrwerte{
@@ -1665,17 +1741,19 @@ footer {
 
 
            #menuknopf {
-        background-image: url('../img/buttonmenu1.png');
+        background-image: url('../img/buttonmenu2.png');
         background-size: 100%;
         background-repeat: no-repeat;
         position: fixed;
         z-index: 10;
         width: 50px;
+        margin-left: 10px;
+        margin-top: 10px;
         height: 50px;
        }
            #diagramm{
-        width: 300px;
-        margin: 180% 0 0 2%;
+        width: 250px;
+        margin: 200% 0 0 7%;
         position: absolute;
        }
 
@@ -1728,6 +1806,7 @@ footer {
             background-color: rgb(48,48,48);
             color: white;
             position: absolute;
+            display: none;
         }
 
         #footer .mail{
@@ -1746,7 +1825,7 @@ footer {
             font-size: 110%;
             font-weight: bold;
             position: absolute;
-            margin-left: 35%;
+            margin-left: 33%;
             margin-top: 190px;
             text-decoration: none;
         }
@@ -1760,13 +1839,14 @@ footer {
         height:300px;
         background-repeat: no-repeat;
         position: relative;
-        padding: 175px 0 20px 0;
+        padding: 150px 0 20px 0;
     }
     #head h1 {
-        font-size: 4em;
+        font-size: 3em;
         font-family: 'Love Ya Like A Sister', cursive;
-        color: #000000;
-        margin-top: -10%;
+        color: white;
+
+        margin-top: 1%;
     }
     #head p {
         font-size: 3em;
@@ -1788,15 +1868,19 @@ footer {
         display: none;
     }
 
-           #fleischpopup{
+     #fleischpopup{
         position: absolute;
         padding: 10px 0 0 10px;
         text-align: justify;
         width: 80%;
-        margin: 75% 0 0 7%;
+        margin: 75% 0 0 5%;
+       }
+       #fleischpopup h1{
+        width: 20px;
        }
        #fleischpopup p{
                 font-family: 'Rokkitt';
+                width: 80%;
         font-weight: 700;
         position: relative;
 
@@ -1804,33 +1888,41 @@ footer {
 
      .rib{
         position: absolute;
+        width: 250px;
        }
 
        .chuck{
         position: absolute;
+                width: 250px;
        }
 
        .shortloin{
         position: absolute;
+                width: 250px;
        }
 
        .sirloin{
         position: absolute;
+                width: 250px;
        }
        .round{
         position: absolute;
+                width: 250px;
        }
         
         .flank{
         position: absolute;
+          width: 250px;
        }
 
         .shortplate{
         position: absolute;
+                width: 250px;
        }
 
         .brisfor{
         position: absolute;
+                width: 250px;
        }
 
 

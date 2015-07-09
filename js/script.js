@@ -36,7 +36,7 @@
 
         // Adding new item
         sideMenu.addItem(
-            new SMButtonItem("Close", function () {
+            new SMButtonItem("CLOSE", function () {
                 sideMenu.close();
             })
         );
