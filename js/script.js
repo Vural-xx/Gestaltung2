@@ -16,50 +16,27 @@
 
         // Adding items with events ("Share")
         sideMenu.addItem(new SMSubMenuItem("Rezepte", [
-            new SMSubMenuItem("Fleischgerichte", [
-                new SMButtonItem("Hamburger", function () {
-                    window.location.href = "index.html";
+                new SMButtonItem("Burger", function () {
+                    window.location.href = "burger.html";
                 }),
                 new SMButtonItem("Steak", function () {
-                    window.location.href = "index.html";
+                    window.location.href = "steak.html";
                 }),
-                 new SMButtonItem("Schnitzel", function () {
-                    window.location.href = "index.html";
+                 new SMButtonItem("Veggy Spieße", function () {
+                    window.location.href = "vegetarisch.html";
                 })
-            ]),
-            new SMSubMenuItem("Fischgerichte", [
-                new SMButtonItem("Lachs", function () {
-                    window.location.href = "index.html";
-                }),
-                new SMButtonItem("Dachs mit Lachs im Maul", function () {
-                    window.location.href = "index.html";
-                }),
-                 new SMButtonItem("Fax mit Dachs mit Lachs im Maul", function () {
-                    window.location.href = "index.html";
-                })
-            ]),
-            new SMSubMenuItem("Vegetarisch", [
-                 new SMButtonItem("Fleischsalat", function () {
-                    window.location.href = "index.html";
-                }),
-                new SMButtonItem("Obstsalat", function () {
-                    window.location.href = "index.html";
-                }),
-                 new SMButtonItem("Salat", function () {
-                    window.location.href = "index.html";
-                })
-            ]),
+   
         ]));
 
         sideMenu.addItem(
             new SMButtonItem("Fleisch", function () {
-                window.location.href = "index.html";
+                window.location.href = "fleischig.html";
             })
         );
 
         // Adding new item
         sideMenu.addItem(
-            new SMButtonItem("Close", function () {
+            new SMButtonItem("CLOSE", function () {
                 sideMenu.close();
             })
         );
@@ -90,7 +67,7 @@
 
         // Adding custom item
         sideMenu.addItem(new SMUserAccountItem(
-          "Grillich"
+          "Menu"
         ), 0 /* index cero, first element */ );
 
 
@@ -99,7 +76,7 @@
             sideMenu.appendTo(document.getElementById('menu'));
         });
 
-    $("#logo").one(evt, function (e) {
+    $("#menuknopf").click(evt, function (e) {
          e.preventDefault();
          sideMenu.open();
          next.call(this);
